@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+p{
+    color: #969696;
+    font-size: 20px;
+    font-weight: normal;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19a2ae;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    height: 100vh;
+}
+.card-container {
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+}
+.top{
+    background-image: url(./images/bg-pattern-card.svg);
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 1px solid #c5c3c3;
+}
+.middle img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 5px solid white;
+}
+h2.name {
+    margin-top: 20px;
+}
+.location {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.middle span {
+    color: #969696;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.status-item p {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 375px) {
+    .card-container{
+        width: 90%;
+        margin: auto;
+    }
+}
